@@ -3,10 +3,6 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-/**
- * @author Meg
- * @since 13/03/2020
- */
 public class HomePage
 {
 	private WebDriver driver;
@@ -43,5 +39,17 @@ public class HomePage
 	{
 		clickLink("Hovers");
 		return new HoversPage(driver);
+	}
+
+	public KeyPressesPage clickKeyPresses()
+	{
+		clickLink("Key Presses");
+		return new KeyPressesPage(driver);
+	}
+
+	public HorizontalSliderPage clickHorizontalSlider()
+	{
+		clickLink("Horizontal Slider");
+		return new HorizontalSliderPage(driver);
 	}
 }

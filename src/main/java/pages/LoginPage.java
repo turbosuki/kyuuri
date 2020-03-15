@@ -3,10 +3,6 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-/**
- * @author Meg
- * @since 13/03/2020
- */
 public class LoginPage
 {
 	private WebDriver driver;
