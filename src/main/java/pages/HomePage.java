@@ -52,4 +52,10 @@ public class HomePage
 		clickLink("Horizontal Slider");
 		return new HorizontalSliderPage(driver);
 	}
+
+	public AlertsPage clickJavascriptAlerts()
+	{
+		clickLink("JavaScript Alerts");
+		return new AlertsPage(driver);
+	}
 }
