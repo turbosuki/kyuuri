@@ -58,4 +58,10 @@ public class HomePage
 		clickLink("JavaScript Alerts");
 		return new AlertsPage(driver);
 	}
+
+	public FileUploadPage clickFileUpload()
+	{
+		clickLink("File Upload");
+		return new FileUploadPage(driver);
+	}
 }
