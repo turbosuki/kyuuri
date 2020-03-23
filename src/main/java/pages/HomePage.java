@@ -70,4 +70,16 @@ public class HomePage
 		clickLink("Context Menu");
 		return new ContextMenuPage(driver);
 	}
+
+	public WysiwygEditorPage clickWysiwygEditor()
+	{
+		clickLink("WYSIWYG Editor");
+		return new WysiwygEditorPage(driver);
+	}
+
+	public FramesPage clickFrames()
+	{
+		clickLink("Frames");
+		return new FramesPage(driver);
+	}
 }
