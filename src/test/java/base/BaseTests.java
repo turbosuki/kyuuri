@@ -4,7 +4,6 @@ import com.google.common.io.Files;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
@@ -38,7 +37,6 @@ public class BaseTests
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		goHome();
-		setCookie();
 	}
 
 	@BeforeMethod
@@ -51,7 +49,7 @@ public class BaseTests
 	@AfterMethod
 	public void recordFailure(ITestResult result)
 	{
-		if(ITestResult.FAILURE == result.getStatus())
+		if (ITestResult.FAILURE == result.getStatus())
 		{
 			try
 			{
