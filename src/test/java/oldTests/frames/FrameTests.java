@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-public class FrameTests extends Hooks
+public class FrameTests
 {
-    @Test
+   /* @Test
     public void testWysiwigEditor()
     {
         var editorPage = homePage.clickWysiwygEditor();
@@ -31,5 +31,5 @@ public class FrameTests extends Hooks
 
         assertEquals(nestedFramesPage.getLeftFrameText(), "LEFT", "Frame text incorrect");
         assertEquals(nestedFramesPage.getBottomFrameText(), "BOTTOM", "Frame text incorrect");
-    }
+    }*/
 }

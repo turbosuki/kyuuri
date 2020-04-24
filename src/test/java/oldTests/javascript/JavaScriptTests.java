@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class JavaScriptTests extends Hooks
+public class JavaScriptTests
 {
-    @Test
+   /* @Test
     public void testScrollToTable()
     {
         homePage.clickLargeAndDeepDom().scrollToTable();
@@ -32,5 +32,5 @@ public class JavaScriptTests extends Hooks
         var selectedOptions = dropdownPage.getSelectedOptions();
         Assert.assertTrue(selectedOptions.containsAll(optionsToSelect), "All options were not selected");
         Assert.assertEquals(selectedOptions.size(), optionsToSelect.size(), "Number of selected items incorrect");
-    }
+    }*/
 }

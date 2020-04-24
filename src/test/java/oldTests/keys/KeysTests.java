@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class KeysTests extends Hooks
+public class KeysTests
 {
-    @Test
+/*    @Test
     public void testBackspace()
     {
         var keyPressesPage = homePage.clickKeyPresses();
@@ -21,5 +21,5 @@ public class KeysTests extends Hooks
     {
         var keyPressesPage = homePage.clickKeyPresses();
         keyPressesPage.enterPi();
-    }
+    }*/
 }

@@ -7,9 +7,9 @@ import pageObjects.SecureAreaPage;
 
 import static org.testng.Assert.assertTrue;
 
-public class LoginTests extends Hooks
+public class LoginTests
 {
-	@Test
+/*	@Test
 	public void testSuccessfulLogin()
 	{
 		LoginPage loginPage = homePage.clickFormAuthenticationLink();
@@ -18,5 +18,5 @@ public class LoginTests extends Hooks
 		SecureAreaPage secureAreaPage = loginPage.clickLoginButton();
 		assertTrue(secureAreaPage.getAlertText().contains("You logged into a secure area!"),
 				"Alert text is incorrect");
-	}
+	}*/
 }

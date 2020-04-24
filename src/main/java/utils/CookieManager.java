@@ -32,5 +32,14 @@ public class CookieManager
         return new Cookie.Builder(name, value)
                 .domain("https://the-internet.herokuapp.com/")
                 .build();
-        }
+    }
+
+    public void setCookie()
+    {
+        Cookie cookie = new Cookie.Builder("kintsukuroi", "123")
+                .domain("the-internet.herokuapp.com")
+                .build();
+
+        driver.manage().addCookie(cookie);
+    }
 }

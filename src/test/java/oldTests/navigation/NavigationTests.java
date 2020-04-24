@@ -3,9 +3,9 @@ package oldTests.navigation;
 import stepDefinition.Hooks;
 import org.testng.annotations.Test;
 
-public class NavigationTests extends Hooks
+public class NavigationTests
 {
-    @Test
+/*    @Test
     public void testNavigator()
     {
         homePage.clickDynamicLoading().clickExample1();
@@ -20,5 +20,5 @@ public class NavigationTests extends Hooks
     {
         homePage.clickMultipleWindows().clickHere();
         getWindowManager().switchToTab("New Window");
-    }
+    }*/
 }

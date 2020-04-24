@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-public class HoverTests extends Hooks
+public class HoverTests
 {
-    @Test
+  /*  @Test
     public void testHoverUser1()
     {
         var hoversPage = homePage.clickHovers();
@@ -17,5 +17,5 @@ public class HoverTests extends Hooks
         assertEquals(caption.getTitle(), "name: user1", "Incorrect caption title");
         assertEquals(caption.getLinkText(), "View profile", "incorrect link text");
         assertTrue(caption.getLink().endsWith("/users/1"), "link incorrect");
-    }
+    }*/
 }

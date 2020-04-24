@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
         import org.openqa.selenium.chrome.ChromeDriver;
         import enums.DriverType;
         import enums.EnvironmentType;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class WebDriverManager
 {
@@ -75,5 +76,12 @@ public class WebDriverManager
     {
         driver.close();
         driver.quit();
+    }
+
+    private ChromeOptions getChromeOptions()
+    {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("disable-infobars");
+        return options;
     }
 }

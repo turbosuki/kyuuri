@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
 
-public class ForgotPasswordTests extends Hooks
+public class ForgotPasswordTests
 {
-    @Test
+/*    @Test
     public void testSuccessfulPasswordReset()
     {
         var forgotPasswordPage = homePage.clickForgotPassword();
@@ -15,5 +15,5 @@ public class ForgotPasswordTests extends Hooks
         var emailSentPage = forgotPasswordPage.clickRetrievePassword();
         assertTrue(emailSentPage.getPasswordResetMessage().contains("Your e-mail's been sent!"),
                 "Incorrect message displayed");
-    }
+    }*/
 }

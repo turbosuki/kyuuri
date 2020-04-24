@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-public class AlertTests extends Hooks
+public class AlertTests
 {
-    @Test
+    /*@Test
     public void testAcceptAlert()
     {
         var alertPage = homePage.clickJavascriptAlerts();
@@ -41,5 +41,5 @@ public class AlertTests extends Hooks
 
         assertEquals(alertPage.getResult(), "You entered: " + inputText, "Result text is incorrect");
     }
-
+*/
 }

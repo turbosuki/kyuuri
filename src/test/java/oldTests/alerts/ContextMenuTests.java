@@ -4,9 +4,9 @@ import stepDefinition.Hooks;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ContextMenuTests extends Hooks
+public class ContextMenuTests
 {
-    @Test
+/*    @Test
     public void testRightClickAssertAlert()
     {
         var contextPage = homePage.clickContextMenu();
@@ -14,5 +14,5 @@ public class ContextMenuTests extends Hooks
 
         Assert.assertEquals(contextPage.getAlertText(), "You selected a context menu", "Alert text is incorrect");
         contextPage.acceptAlert();
-    }
+    }*/
 }
