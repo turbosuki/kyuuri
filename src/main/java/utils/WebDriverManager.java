@@ -1,17 +1,17 @@
 package utils;
 
 import java.util.concurrent.TimeUnit;
-        import org.openqa.selenium.WebDriver;
-        import org.openqa.selenium.chrome.ChromeDriver;
-        import enums.DriverType;
-        import enums.EnvironmentType;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import enums.DriverType;
+import enums.EnvironmentType;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class WebDriverManager
 {
     private WebDriver driver;
-    private static DriverType driverType;
-    private static EnvironmentType environmentType;
+    private DriverType driverType;
+    private EnvironmentType environmentType;
     private static final String CHROME_DRIVER_PROPERTY = "webdriver.chrome.driver";
 
     public WebDriverManager()
@@ -56,7 +56,7 @@ public class WebDriverManager
                 throw new RuntimeException("Firefox driver is not yet implemented");
             case CHROME:
                 System.setProperty(CHROME_DRIVER_PROPERTY, FileReaderManager.getInstance().getConfigReader().getDriverPath());
-                driver = new ChromeDriver();
+                driver = new ChromeDriver(getChromeOptions());
                 break;
             case INTERNETEXPLORER:
                 throw new RuntimeException("Internet Explorer driver is not yet implemented");
@@ -81,7 +81,6 @@ public class WebDriverManager
     private ChromeOptions getChromeOptions()
     {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("disable-infobars");
         return options;
     }
 }
