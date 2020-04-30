@@ -17,13 +17,13 @@ public class ContextMenuSteps
         contextMenuPage = testContext.getPageObjectManager().getContextMenuPage();
     }
 
-    @When("the user right clicks the hotspot")
+    @When("^the user right clicks the hotspot$")
     public void theUserRightClicksTheHotspot()
     {
         contextMenuPage.rightClickHotSpot();
     }
 
-    @Then("the page displays an alert")
+    @Then("^the page displays an alert$")
     public void thePageDisplaysAnAlert()
     {
         Assert.assertEquals(contextMenuPage.getAlertText(), "You selected a context menu",

@@ -26,4 +26,11 @@ public class HomePageSteps
     {
         homePage.clickContextMenu();
     }
+
+    @Given("the user accesses the File Upload page")
+    public void theUserAccessesTheFileUploadPage()
+    {
+        homePage.clickFileUpload();
+    }
+
 }
