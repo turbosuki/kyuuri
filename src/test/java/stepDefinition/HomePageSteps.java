@@ -33,4 +33,9 @@ public class HomePageSteps
         homePage.clickFileUpload();
     }
 
+    @Given("^the user accesses the Dropdown page$")
+    public void theUserAccessesTheDropdownPage()
+    {
+        homePage.clickDropDown();
+    }
 }
