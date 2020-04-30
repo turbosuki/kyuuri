@@ -20,4 +20,10 @@ public class HomePageSteps
     {
         homePage.clickJavascriptAlerts();
     }
+
+    @Given("^the user accesses the Context Menu page$")
+    public void theUserAccessTheContextMenuPage()
+    {
+        homePage.clickContextMenu();
+    }
 }

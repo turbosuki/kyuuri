@@ -81,6 +81,7 @@ public class WebDriverManager
     private ChromeOptions getChromeOptions()
     {
         ChromeOptions options = new ChromeOptions();
+        // set options here when finished
         return options;
     }
 }
