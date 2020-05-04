@@ -19,9 +19,8 @@ public class ForgotPasswordPage
         driver.findElement(emailField).sendKeys(email);
     }
 
-    public EmailSentPage clickRetrievePassword()
+    public void clickRetrievePassword()
     {
         driver.findElement(retrievePasswordButton).click();
-        return new EmailSentPage(driver);
     }
 }

@@ -27,7 +27,7 @@ public class HomePageSteps
         homePage.clickContextMenu();
     }
 
-    @Given("the user accesses the File Upload page")
+    @Given("^the user accesses the File Upload page$")
     public void theUserAccessesTheFileUploadPage()
     {
         homePage.clickFileUpload();
@@ -37,5 +37,11 @@ public class HomePageSteps
     public void theUserAccessesTheDropdownPage()
     {
         homePage.clickDropDown();
+    }
+
+    @Given("^the user accesses the Forgot Password page$")
+    public void theUserAccessesTheForgotPasswordPage()
+    {
+        homePage.clickForgotPassword();
     }
 }
