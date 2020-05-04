@@ -23,16 +23,14 @@ public class HomePage
 		return new LoginPage(driver);
 	}
 
-	public DropdownPage clickDropDown()
+	public void clickDropDown()
 	{
 		clickLink("Dropdown");
-		return new DropdownPage(driver);
 	}
 
-	public ForgotPasswordPage clickForgotPassword()
+	public void clickForgotPassword()
 	{
 		clickLink("Forgot Password");
-		return new ForgotPasswordPage(driver);
 	}
 
 	public HoversPage clickHovers()
@@ -53,34 +51,29 @@ public class HomePage
 		return new HorizontalSliderPage(driver);
 	}
 
-	public AlertsPage clickJavascriptAlerts()
+	public void clickJavascriptAlerts()
 	{
 		clickLink("JavaScript Alerts");
-		return new AlertsPage(driver);
 	}
 
-	public FileUploadPage clickFileUpload()
+	public void clickFileUpload()
 	{
 		clickLink("File Upload");
-		return new FileUploadPage(driver);
 	}
 
-	public ContextMenuPage clickContextMenu()
+	public void clickContextMenu()
 	{
 		clickLink("Context Menu");
-		return new ContextMenuPage(driver);
 	}
 
-	public WysiwygEditorPage clickWysiwygEditor()
+	public void clickWysiwygEditor()
 	{
 		clickLink("WYSIWYG Editor");
-		return new WysiwygEditorPage(driver);
 	}
 
-	public FramesPage clickFrames()
+	public void clickFrames()
 	{
 		clickLink("Frames");
-		return new FramesPage(driver);
 	}
 
 	public DynamicLoadingPage clickDynamicLoading()

@@ -9,10 +9,9 @@ public class FramesPage
     private By nestedFramesLink = By.linkText("Nested Frames");
     private By iFrameLink = By.linkText("iFrame");
 
-    public NestedFramePage clickNestedFrames()
+    public void clickNestedFrames()
     {
         driver.findElement(nestedFramesLink).click();
-        return new NestedFramePage(driver);
     }
 
     public FramesPage(WebDriver driver)

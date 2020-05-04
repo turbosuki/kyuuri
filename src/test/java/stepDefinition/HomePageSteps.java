@@ -44,4 +44,16 @@ public class HomePageSteps
     {
         homePage.clickForgotPassword();
     }
+
+    @Given("^the user accesses the Frames page$")
+    public void theUserAccessesTheFramesPage()
+    {
+        homePage.clickFrames();
+    }
+
+    @Given("^the user accesses the WYSIWYG Editor page$")
+    public void theUserAccessesTheWYSIWYGEditorPage()
+    {
+        homePage.clickWysiwygEditor();
+    }
 }
