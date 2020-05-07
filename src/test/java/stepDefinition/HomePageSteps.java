@@ -76,4 +76,10 @@ public class HomePageSteps
     {
         homePage.clickKeyPresses();
     }
+
+    @Given("^the user accesses the Form Authentication page$")
+    public void theUserAccessesTheFormAuthenticationPage()
+    {
+        homePage.clickFormAuthenticationLink();
+    }
 }
