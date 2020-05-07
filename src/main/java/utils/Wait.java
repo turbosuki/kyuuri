@@ -31,8 +31,13 @@ public class Wait
     {
         until(driver, (d) ->
         {
-            Boolean isPageLoaded = (Boolean)((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
-            if (!isPageLoaded) System.out.println("Document is loading");
+            Boolean isPageLoaded = ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+
+            if (!isPageLoaded)
+            {
+                System.out.println("Document is loading");
+            }
+
             return isPageLoaded;
         }, timeoutInSeconds);
     }
