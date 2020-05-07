@@ -28,28 +28,6 @@ public class Hooks
 	}
 
 	@After
-	public void recordFailure(Scenario scenario)
-	{
-		if (scenario.isFailed())
-		{
-			try
-			{
-				File screenshot = ((TakesScreenshot)testContext.getWebDriverManager().getDriver())
-						.getScreenshotAs(OutputType.FILE);
-				Files.move(screenshot, new File("resources/screenshots/" + scenario.getName() + ".png"));
-			}
-			catch (WebDriverException webDriverException)
-			{
-				System.err.println(webDriverException.getMessage());
-			}
-			catch(IOException e)
-			{
-				e.printStackTrace();
-			}
-		}
-	}
-
-	@After
 	public void tearDown()
 	{
 		testContext.getWebDriverManager().teardown();
