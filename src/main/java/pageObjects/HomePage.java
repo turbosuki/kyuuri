@@ -17,10 +17,9 @@ public class HomePage
 		driver.findElement(By.linkText(linktext)).click();
 	}
 
-	public LoginPage clickFormAuthenticationLink()
+	public void clickFormAuthenticationLink()
 	{
 		clickLink("Form Authentication");
-		return new LoginPage(driver);
 	}
 
 	public void clickDropDown()
@@ -33,22 +32,19 @@ public class HomePage
 		clickLink("Forgot Password");
 	}
 
-	public HoversPage clickHovers()
+	public void clickHovers()
 	{
 		clickLink("Hovers");
-		return new HoversPage(driver);
 	}
 
-	public KeyPressesPage clickKeyPresses()
+	public void clickKeyPresses()
 	{
 		clickLink("Key Presses");
-		return new KeyPressesPage(driver);
 	}
 
-	public HorizontalSliderPage clickHorizontalSlider()
+	public void clickHorizontalSlider()
 	{
 		clickLink("Horizontal Slider");
-		return new HorizontalSliderPage(driver);
 	}
 
 	public void clickJavascriptAlerts()
@@ -76,27 +72,23 @@ public class HomePage
 		clickLink("Frames");
 	}
 
-	public DynamicLoadingPage clickDynamicLoading()
+	public void clickDynamicLoading()
 	{
 		clickLink("Dynamic Loading");
-		return new DynamicLoadingPage(driver);
 	}
 
-	public LargeAndDeepDomPage clickLargeAndDeepDom()
+	public void clickLargeAndDeepDom()
 	{
 		clickLink("Large & Deep DOM");
-		return new LargeAndDeepDomPage(driver);
 	}
 
-	public InfiniteScrollPage clickInfiniteScroll()
+	public void clickInfiniteScroll()
 	{
 		clickLink("Infinite Scroll");
-		return new InfiniteScrollPage(driver);
 	}
 
-	public MultipleWindowsPage clickMultipleWindows()
+	public void clickMultipleWindows()
 	{
 		clickLink("Multiple Windows");
-		return new MultipleWindowsPage(driver);
 	}
 }

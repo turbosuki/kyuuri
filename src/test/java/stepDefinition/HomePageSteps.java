@@ -56,4 +56,10 @@ public class HomePageSteps
     {
         homePage.clickWysiwygEditor();
     }
+
+    @Given("^the user accesses the Horizontal Slider page$")
+    public void theUserAccessesTheHorizontalSliderPage()
+    {
+        homePage.clickHorizontalSlider();
+    }
 }
