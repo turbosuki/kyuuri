@@ -62,4 +62,10 @@ public class HomePageSteps
     {
         homePage.clickHorizontalSlider();
     }
+
+    @Given("^the user accesses the Hover page$")
+    public void theUserAccessesTheHoverPage()
+    {
+        homePage.clickHovers();
+    }
 }
