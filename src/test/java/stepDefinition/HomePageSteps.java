@@ -88,4 +88,10 @@ public class HomePageSteps
     {
         homePage.clickDynamicLoading();
     }
+
+    @When("^the user accesses the Large and Deep Dom page$")
+    public void theUserAccessesTheLargeAndDeepDomPage()
+    {
+        homePage.clickLargeAndDeepDom();
+    }
 }
