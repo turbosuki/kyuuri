@@ -82,4 +82,10 @@ public class HomePageSteps
     {
         homePage.clickFormAuthenticationLink();
     }
+
+    @Given("^the user accesses the Dynamic Loading page$")
+    public void theUserAccessesTheDynamicLoadingPage()
+    {
+        homePage.clickDynamicLoading();
+    }
 }
