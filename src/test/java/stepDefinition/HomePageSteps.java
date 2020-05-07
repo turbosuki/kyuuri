@@ -1,6 +1,8 @@
 package stepDefinition;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pageObjects.HomePage;
 import utils.TestContext;
 
@@ -67,5 +69,11 @@ public class HomePageSteps
     public void theUserAccessesTheHoverPage()
     {
         homePage.clickHovers();
+    }
+
+    @Given("^the user accesses the Key Presses page$")
+    public void theUserAccessesTheKeyPressesPage()
+    {
+        homePage.clickKeyPresses();
     }
 }
